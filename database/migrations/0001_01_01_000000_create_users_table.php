@@ -18,7 +18,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
             $table->rememberToken();
-            $table->interger('gamesplayed') ->default = 0;
+            $table->integer('gamesplayed') ->default = 0;
             $table->timestamps();
         });
 
