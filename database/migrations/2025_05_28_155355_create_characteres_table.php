@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('height');
             $table->string('hair_color');
             $table->string('age');
-            $table->unsignedBigInteger('nem_type_id')->nullable();
-            $table->foreign('nem_type_id')->references('id')->on('nem_types')->onDelete('set null');
+            $table->unsignedBigInteger('nen_type_id')->nullable();
+            $table->foreign('nen_type_id')->references('id')->on('nen_types')->onDelete('set null');
             $table->unsignedBigInteger('acr_id')->nullable();
             $table->foreign('acr_id')->references('id')->on('arcs')->onDelete('set null');
             $table->timestamps();

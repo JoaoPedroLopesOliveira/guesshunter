@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nem_types', function (Blueprint $table) {
+        Schema::create('nen_types', function (Blueprint $table) {
             $table->id();
             $table ->string('type')->unique();
             $table->timestamps();
